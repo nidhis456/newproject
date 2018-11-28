@@ -1,0 +1,152 @@
+
+/*---------------------
+Global css
+---------------------*/
+html { position:relative; min-height:100%;}
+body { overflow-x:hidden; font-size: 15px; line-height: 26px; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #2d2d2d;}
+ul , li {list-style:none; margin: 0; padding: 0; }
+a { color: #000; text-decoration:none; outline:none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;}
+a:hover, a:focus, a:active { text-decoration:none; outline:none; color: #621aa8;}
+select, select:focus, button:hover, button:active, button:focus {
+    outline:none;
+}
+select::-ms-expand {
+    display: none;
+}
+a img { border:none;}
+* {
+  outline: none;
+}
+
+/* Check box Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 17px;
+  cursor: pointer;
+  font-size: 17px; 
+  line-height:18px; 
+  color: #4f4f4f;
+  margin: 0;  
+}
+[type="checkbox"]:not(:checked) + label a ,
+[type="checkbox"]:checked + label a { color: #621aa8; text-decoration: underline;  }
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before {
+  content: '\f0c8';
+  position: absolute;
+  left: 0; top: 0;
+   font-size: 17px; 
+  width: 18px; height: 18px;
+  font-weight: 400;
+  font-family:"Font Awesome 5 Free";
+  color: #19b4dc;
+}
+/* checked mark aspect */
+[type="checkbox"]:checked + label:before {
+  content: '\f14a';
+  position: absolute;
+  left: 0; 
+  top: 0;
+  width: 18px; height: 18px;
+  font-weight: 800;
+  font-family:"Font Awesome 5 Free";
+  color: #19b4dc;
+}
+
+.btn {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.btn, .btn:focus {
+  ouline: none;
+  box-shadow: none;
+}
+.gradient-bg {
+  background: linear-gradient(to right, #3ab1da, #52dac9);
+}
+.gray-bg {
+  background-color: #f2f3f4;
+}
+.top-sec {
+  padding: 15px 20px;
+  background-color: #e4f8f9;
+}
+.product-table th,
+.product-table td {
+  padding: 5px 10px;
+  vertical-align: middle !important;
+}
+.product-table th {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.product-table th [type="checkbox"]:not(:checked) + label:before,
+.product-table th [type="checkbox"]:checked + label:before {
+  color: #fff !important;
+}
+.product-img {
+  padding: 0;
+}
+
+.product-table .fa-chevron-circle-right,
+.product-table .fa-chevron-circle-left {
+  color: #3fc385;
+  font-size: 40px;
+}
+.btn-transparent {
+ background-color: transparent;
+}
+.total-record {
+  font-weight: 600;
+  color: #494949;
+}
+
+.header-user-sec {
+  float: right;
+}
+.header-user-sec .dropdown, 
+.header-user-sec .notification, .header-user-sec
+.user-avtar {
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+.header-user-sec .dropdown .btn {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.header-user-sec .notification {
+   vertical-align: bottom;
+   position: relative;
+   padding: 0 15px 0 5px;
+}
+.header-user-sec .notification .fas {
+  font-size: 20px;  
+}
+.header-user-sec .notification .count {
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px 5px;
+  top: -10px;
+  right: 0;
+  line-height: 1.2em;
+  position: absolute;
+  font-size: 13px;
+}
+.header-user-sec .user-avtar img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+
